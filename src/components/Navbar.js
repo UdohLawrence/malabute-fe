@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white dark:bg-gray-500 shadow-lg dark:shadow-2xl text-gray-800 dark:text-white">
+    <nav className="bg-white sticky top-0 dark:bg-gray-500 shadow-lg dark:shadow-2xl text-gray-800 dark:text-white">
       <div className="flex justify-between max-w-7xl mx-auto py-5 items-center">
         <div className="flex justify-start items-center space-x-4">
           <Image src={SiteLogo} alt="Site Logo" width={60} height={60} />
