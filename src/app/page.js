@@ -1,11 +1,16 @@
-import Image from "next/image";
+import ConnectLinks from "@/components/ConnectLinks";
+import HeroSection from "@/components/HeroSection";
+import Navbar from "@/components/Navbar";
+import Services from "@/components/Services";
+
 
 export default function Home() {
   return (
     <>
-      <div>
-      <h1 className="text-2xl text-bold text-center">This is the homepage.</h1>
-      </div>
+      <ConnectLinks />
+      <Navbar />
+      <HeroSection />
+      <Services />
     </>
-  );
+  )
 }
