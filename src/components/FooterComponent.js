@@ -1,12 +1,9 @@
 import {
   Footer,
   FooterCopyright,
-  FooterDivider,
   FooterLink,
   FooterLinkGroup,
 } from "flowbite-react";
-import SiteLogo from "../../public/malabute-logo.png";
-import Image from "next/image";
 
 const FooterComponent = () => {
 
@@ -14,26 +11,26 @@ const FooterComponent = () => {
   thisYear = thisYear.getFullYear()
 
   return (
-    <Footer container className="w-full text-center bg-gray-500">
+    <Footer container className="w-full text-center bg-white">
       <div className="w-full text-center px-6 py-6">
-        <div className="w-full max-w-7xl mx-auto justify-between sm:flex sm:items-center sm:justify-between text-white">
+        <div className="w-full max-w-7xl flex flex-col gap-4 sm:flex-row mx-auto justify-between sm:items-center sm:justify-between text-white">
           <FooterCopyright
             href="#"
             by="Malabute"
             year={thisYear}
-            className="text-xl font-semibold text-white"
+            className="text-xl font-semibold text-gray-600"
           />
-          <FooterLinkGroup>
-            <FooterLink href="#" className="text-xl font-semibold text-white">
+          <FooterLinkGroup className="flex flex-col md:flex-row gap-3">
+            <FooterLink href="#" className="text-xl font-semibold text-gray-600">
               Our Team
             </FooterLink>
-            <FooterLink href="#" className="text-xl font-semibold text-white">
+            <FooterLink href="#" className="text-xl font-semibold text-gray-600">
               Content
             </FooterLink>
-            <FooterLink href="#" className="text-xl font-semibold text-white">
+            <FooterLink href="#" className="text-xl font-semibold text-gray-600">
               Sample Deal
             </FooterLink>
-            <FooterLink href="#" className="text-xl font-semibold text-white">
+            <FooterLink href="#" className="text-xl font-semibold text-gray-600">
               Contact Us
             </FooterLink>
           </FooterLinkGroup>

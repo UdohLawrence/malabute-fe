@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import SiteLogo from "../../public/malabute-logo.png";
 import Link from "next/link";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
+import { useState } from "react";
 
 const Navbar = () => {
   const layoutRoutes = [
@@ -22,52 +27,65 @@ const Navbar = () => {
     },
   ];
 
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
   return (
-    <nav className="bg-white sticky top-0 dark:bg-gray-500 shadow-lg dark:shadow-2xl text-gray-800 dark:text-white">
-      <div className="flex justify-between max-w-7xl mx-auto py-5 items-center">
-        <div className="flex justify-start items-center space-x-4">
-          <Image src={SiteLogo} alt="Site Logo" width={60} height={60} />
-          <h1 className="text-2xl font-semibold">Jason Malabute</h1>
-        </div>
-        <div className="flex space-x-8">
-          {layoutRoutes.map((layoutRoute, index) => (
-            <Link
-              href={layoutRoute.link}
-              key={index}
-              className="font-semibold text-xl hover:text-blue-600"
-            >
-              {layoutRoute.name}
+    <>
+      <nav className="bg-white sticky top-0 z-10 dark:bg-gray-500 shadow-lg dark:shadow-2xl text-gray-800 dark:text-white">
+        <div className="flex justify-between max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 items-center">
+          <div className="flex justify-start items-center space-x-4">
+            <Link href="/" className="flex items-center gap-3">
+              <Image src={SiteLogo} alt="Site Logo" width={60} height={60} />
+              <h1 className="hidden md:inline text-2xl font-semibold">
+                Jason Malabute
+              </h1>
             </Link>
-          ))}
+          </div>
+          {/*Mobile Menu*/}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+            <div className="hidden md:flex gap-3">
+              {layoutRoutes.map((layoutRoute, index) => (
+                <Link
+                  href={layoutRoute.link}
+                  key={index}
+                  className="font-semibold text-xl hover:text-blue-600"
+                >
+                  {layoutRoute.name}
+                </Link>
+              ))}
+            </div>
+
+            <span
+              className="md:hidden text-3xl"
+              onClick={() => setOpenMobileMenu(!openMobileMenu)}
+            >
+              {openMobileMenu ? <FaTimes /> : <GiHamburgerMenu />}
+            </span>
+            <div className="">
+              {openMobileMenu && (
+                <div className="flex w-screen flex-col mx-auto items-center justify-center md:hidden">
+                  <Link href="/">
+                    <h1 className="font-semibold w-full py-6 text-center text-xl hover:text-blue-600 hover:opacity-90">
+                      Home
+                    </h1>
+                  </Link>
+                  {layoutRoutes.map((layoutRoute, index) => (
+                    <Link
+                      href={layoutRoute.link}
+                      key={index}
+                      className="font-semibold w-full py-6 text-center text-xl hover:text-blue-600 hover:opacity-90"
+                    >
+                      {layoutRoute.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 
 export default Navbar;
-
-{
-  /* 
-<nav class="bg-gray-50 dark:bg-gray-700">
-    <div class="max-w-screen-xl px-4 py-3 mx-auto">
-        <div class="flex items-center">
-            <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-                <li>
-                    <a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-900 dark:text-white hover:underline">Company</a>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-900 dark:text-white hover:underline">Team</a>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-900 dark:text-white hover:underline">Features</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>  
-*/
-}
