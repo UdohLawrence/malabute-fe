@@ -1,21 +1,20 @@
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import SectionHeading from "./SectionHeading";
-import sterling from "../../public/sterling-white.jpg";
-import fae from "../../public/fae-bautista.jpg";
-import nick from "../../public/nick-giuliouni.jpg";
 
 export function Testimonials() {
   return (
     <>
       <SectionHeading title="Testimonials" />
-      <div className="max-w-7xl bg-white shadow-md mt-1 dark:bg-gray-600 px-8 py-6 mx-auto">
+      <div className="max-w-7xl min-h-32 bg-white shadow-md mt-1 mb-3 dark:bg-gray-600 px-8 py-6 mx-auto">
         <Carousel>
           <div className="flex mx-auto flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <Image
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src={sterling}
+              src={"/sterling-white.jpg"}
               alt="Sterling White"
+              width={384}
+              height={384}
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -34,8 +33,10 @@ export function Testimonials() {
           <div className="flex flex-col mx-auto items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <Image
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src={fae}
+              src={"/fae-bautista.jpg"}
               alt=""
+              width={384}
+              height={384}
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -54,8 +55,10 @@ export function Testimonials() {
           <div className="flex mx-auto flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <Image
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src={nick}
+              src={"/nick-giuliouni.jpg"}
               alt="Nick Giuliouni"
+              width={384}
+              height={384}
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

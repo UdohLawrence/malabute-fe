@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import SiteLogo from "../../public/malabute-logo.png";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
@@ -35,7 +34,12 @@ const Navbar = () => {
         <div className="flex justify-between max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 items-center">
           <div className="flex justify-start items-center space-x-4">
             <Link href="/" className="flex items-center gap-3">
-              <Image src={SiteLogo} alt="Site Logo" width={60} height={60} />
+              <Image
+                src={"/malabute-logo.png"}
+                alt="Site Logo"
+                width={60}
+                height={60}
+              />
               <h1 className="hidden md:inline text-2xl font-semibold">
                 Jason Malabute
               </h1>

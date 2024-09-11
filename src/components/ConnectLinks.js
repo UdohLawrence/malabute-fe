@@ -1,10 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Phone from "../../public/phone.svg";
-import Email from "../../public/email.svg";
-import Instagram from "../../public/instagram.svg";
-import Facebook from "../../public/facebook.svg";
-import Twitter from "../../public/Twitter.svg";
 
 const ConnectLinks = () => {
   return (
@@ -15,7 +10,7 @@ const ConnectLinks = () => {
           className="flex items-center justify-center space-x-1 border-r-2 px-3"
         >
           <Image
-            src={Phone}
+            src={'/phone.svg'}
             alt="Phone"
             width={25}
             height={25}
@@ -24,18 +19,18 @@ const ConnectLinks = () => {
           <span className="hidden md:inline">555-5555</span>
         </Link>
         <Link href="mailto:jason@malabutecpa.com">
-          <Image src={Email} alt="Email" width={25} height={25} />
+          <Image src={'/email.svg'} alt="Email" width={25} height={25} />
         </Link>
       </div>
       <div className="flex space-x-4">
         <Link href="https://www.facebook.com">
-          <Image src={Facebook} alt="Facebook" width={25} height={25} />
+          <Image src={'/facebook.svg'} alt="Facebook" width={25} height={25} />
         </Link>
         <Link href="https://www.twitter.com">
-          <Image src={Twitter} alt="Twitter" width={25} height={25} />
+          <Image src={'/twitter.svg'} alt="Twitter" width={25} height={25} />
         </Link>
         <Link href="https://www.instagram.com">
-          <Image src={Instagram} alt="Instagram" width={25} height={25} />
+          <Image src={'/instagram.svg'} alt="Instagram" width={25} height={25} />
         </Link>
       </div>
     </div>

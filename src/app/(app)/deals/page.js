@@ -2,10 +2,6 @@ import Card from "@/components/Card";
 import SectionHeading from "@/components/SectionHeading";
 import { Carousel } from "flowbite-react";
 import React from "react";
-import deal1 from "../../../../public/deal-1.png";
-import deal2 from "../../../../public/deal-2.png";
-import deal3 from "../../../../public/deal-3.png";
-import deal4 from "../../../../public/deal-4.png";
 import Image from "next/image";
 
 const Deals = () => {
@@ -23,10 +19,10 @@ const Deals = () => {
       </Card>
       <div className="w-full max-w-md mt-3 mx-auto h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel>
-          <Image src={deal1} width={300} height={300} alt="Property one" />
-          <Image src={deal2} width={300} height={300} alt="Property two" />
-          <Image src={deal3} width={300} height={300} alt="Property three" />
-          <Image src={deal4} width={300} height={300} alt="Property four" />
+          <Image src={'/deal1.png'} width={300} height={300} alt="Property one" />
+          <Image src={'/deal2.png'} width={300} height={300} alt="Property two" />
+          <Image src={'/deal3.png'} width={300} height={300} alt="Property three" />
+          <Image src={'/deal4.png'} width={300} height={300} alt="Property four" />
         </Carousel>
       </div>
       <Card>
