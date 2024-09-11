@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Deals = () => {
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-6xl mx-auto">
       <SectionHeading title="Sample Deals" />
       <Card>
         <h2 className="text-xl font-semibold my-3">DISCLAMER</h2>
@@ -19,10 +19,10 @@ const Deals = () => {
       </Card>
       <div className="w-full max-w-md mt-3 mx-auto h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel>
-          <Image src={'/deal1.png'} width={300} height={300} alt="Property one" />
-          <Image src={'/deal2.png'} width={300} height={300} alt="Property two" />
-          <Image src={'/deal3.png'} width={300} height={300} alt="Property three" />
-          <Image src={'/deal4.png'} width={300} height={300} alt="Property four" />
+          <Image src={'/deal-1.png'} width={300} height={300} alt="Property one" />
+          <Image src={'/deal-2.png'} width={300} height={300} alt="Property two" />
+          <Image src={'/deal-3.png'} width={300} height={300} alt="Property three" />
+          <Image src={'/deal-4.png'} width={300} height={300} alt="Property four" />
         </Carousel>
       </div>
       <Card>

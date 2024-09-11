@@ -33,7 +33,7 @@ const Services = () => {
     <>
       <SectionHeading title="Our Services" />
       <Card>
-        <div className="flex flex-col sm:flex-row shadow max-w-7xl mx-auto gap-4 p-4 flex-wrap">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 shadow max-w-6xl mx-auto gap-4 p-4 flex-wrap">
           {servicesList.map((service) => (
           <div
             key={service.title}

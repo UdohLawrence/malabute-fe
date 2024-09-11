@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Team = () => {
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-6xl mx-auto">
       <SectionHeading title="Our Team" />
       <Card>
         <div className="flex mx-auto flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row w-full max-w-6xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">

@@ -6,7 +6,7 @@ export function Testimonials() {
   return (
     <>
       <SectionHeading title="Testimonials" />
-      <div className="max-w-7xl min-h-32 bg-white shadow-md mt-1 mb-3 dark:bg-gray-600 px-8 py-6 mx-auto">
+      <div className="max-w-6xl min-h-32 bg-white shadow-md mt-1 mb-3 dark:bg-gray-600 px-8 py-6 mx-auto">
         <Carousel>
           <div className="flex mx-auto flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <Image
