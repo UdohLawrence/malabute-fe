@@ -21,7 +21,7 @@ export function Testimonials() {
                 Sterling White
               </h5>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                I've worked with Jason Malabute since fall of 2020. In that time
+                I have worked with Jason Malabute since fall of 2020. In that time
                 I observed his endless dedication to learning and desire to
                 achieve the goals put in front of him. I particularly remember
                 the countless times of his eagerness to find answers and not
@@ -43,7 +43,7 @@ export function Testimonials() {
                 Fae Bautista
               </h5>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Jason Malabute is a huge inspiration to me. We've been working
+                Jason Malabute is a huge inspiration to me. We have been working
                 together for years. Jason is relentless, always striving to be
                 his best version, very diligent and smart, despite the first
                 impression of him. Jason communicates very well, and his
@@ -66,7 +66,7 @@ export function Testimonials() {
               </h5>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Jason is an incredibly dedicated investor who is willing to
-                swing big. He's always willing to lend a helping hand to those
+                swing big. He is always willing to lend a helping hand to those
                 around him. If I were putting a bet on someone to make it big -
                 I would bet on Jason.
               </p>
